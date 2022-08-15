@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="uz.fozilbekimomov.ml-card-scan">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application>
+
+        <activity
+            android:name=".ScanCardActivity"
+            android:theme="@style/ScanTheme"
+            tools:ignore="LockedOrientationActivity">
+
+            <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="text" />
+
+        </activity>
+
+    </application>
+
+</manifest>
