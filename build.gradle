@@ -2,7 +2,7 @@
 buildscript {
     //other things....
     dependencies {
-
+//        maven { url "https://jitpack.io" }
     }
 }
 plugins {
